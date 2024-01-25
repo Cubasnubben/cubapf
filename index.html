@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Cuba Portfolio 2023</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/CubaG.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#services">Tjänster</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontendutvecklare</p>
+          <h1>
+            <span>Cuba</span>
+            Gustafsson
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------About------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/Cubaprofile.jpg" alt="img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">Vem är jag?</h1>
+            <p>
+              Jag hann fylla 40 innan jag insåg jag att skapandet var min
+              största drivkraft. Efter flera år som fritidsledare och större
+              delen av mitt vuxna liv som kock fanns det något annat i mig som
+              lockade mer. Att designa, utveckla, skapa och bygga drog mig mot
+              en framtid som programmerare. Jag trivs bäst som Frontend men
+              tittar naturligtvis nyfiket mot fullstack eller att utvecklas inom
+              IT-säkerhet. Jag är av naturen nyfiken, utmanande och prestigelös.
+              Jag gillar de tuffa frågorna och de utvecklande samtalen och vet
+              att jag bidrar till att människor runt mig mår bra. Att ha roligt,
+              känna att jag bidrar och utvecklas är medfödda drivkrafter och jag
+              kan garantera att inte en dag blir tråkig med mig i ert team.
+            </p>
+            <div class="tabtitles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Kompetens
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Erfarenhet
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Utbildning</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Utveckling</li>
+                <li><span>React</span><br />React Framework Design</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - 2024</span><br />Praktik på Onslip Cloud</li>
+                <li><span>2022 - 2023</span><br />Praktik på Onslip</li>
+                <li><span>2021 - 2021</span><br />Praktik på Formpipe</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - 2024</span><br />Frontendutveckling på ITHS
+                  Stockholm
+                </li>
+                <li>
+                  <span>2022</span><br />React at Folkuniversitetet Göteborg
+                </li>
+                <li>
+                  <span>2020 - 2022</span><br />Systemutveckling .Net C# på TUC
+                  Yrkeshögskola
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ Services -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">Mina Tjänster</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Webbdesign</h2>
+            <p>Fokus på användaren</p>
+            <a href="#" onclick="openModal(event, 'webDesignModal')"
+              >Läs vidare</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+
+            <h2>UI / UX Design</h2>
+            <p>Skapande & upplevelser</p>
+            <a href="#" onclick="openModal(event, 'uiUxDesignModal')"
+              >Läs vidare</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React / Vue</h2>
+            <p>Utveckling & redskap</p>
+            <a href="#" onclick="openModal(event, 'reactVueModal')"
+              >Läs vidare</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="webDesignModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(event, 'webDesignModal')"
+          >&times;</span
+        >
+        <h2>Webbdesign</h2>
+        <p>
+          Färg, Form och Funktion är något jag ivrigt sjunker ned i. Efter en
+          2-årig YH-Utbildning inom <b>Systemutveckling.NET</b> blev jag mer
+          intresserad av vad användaren upplever, och det drev mig till att
+          utvecklas till Frontendutvecklare. Mitt mål är att upplevelsen blir
+          glädjefylld och minnesvärd.
+        </p>
+      </div>
+    </div>
+
+    <div id="uiUxDesignModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(event, 'uiUxDesignModal')"
+          >&times;</span
+        >
+        <h2>UI / UX Design</h2>
+        <p>
+          <b>UI/UX</b> Ligger mig varmt om hjärtat då jag älskar det estetiska,
+          att fånga ögat och upplevelsen utan att påverka när du är ute på
+          webben, att göra det enkelt och behagligt för användaren att hitta och
+          nå rätt.
+        </p>
+      </div>
+    </div>
+
+    <div id="reactVueModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(event, 'reactVueModal')"
+          >&times;</span
+        >
+        <h2>React / Vue</h2>
+        <p>
+          React och Vue är två ramverk jag är väldigt engagerad i, och jobbar
+          cleant och städat med. Bootstrap och Tailwind för styling och UI,
+          reponsivitet är också något jag är bekväm med.
+        </p>
+      </div>
+    </div>
+
+    <!--------------------PORTFOLIO-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Mina Projekt</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/musicplayer.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Music Player</h3>
+              <p>En vanlig enkel Musikspelare</p>
+              <a
+                href="https://github.com/Cubasnubben/IronMaidenTestSite/tree/master"
+                target="_blank"
+              >
+                <i class="fa-solid fa-music"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/web.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>En basic förtsa portfolio.</p>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/game.jpg" alt="wimg" />
+            <div class="layer">
+              <h3>Spel</h3>
+              <p>Mario Run... Akta dig för spöken...</p>
+              <a href="https://github.com/Cubasnubben/Mario-Run" target="_blank"
+                ><i class="fa-solid fa-gamepad"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Cubasnubben" target="_blank" class="btn"
+          >GiThUb</a
+        >
+      </div>
+    </div>
+
+    <!---------------------Kontakt----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Kontakta mig</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>trill007@hotmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+46736281760</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn btncv">Tillbaka Hem </a>
+          </div>
+          <div class="contact-right">
+            <form onsubmit="sendEmail(event)">
+              <input type="text" name="Name" placeholder="Namn" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                placeholder="Meddelande"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btncv">Skicka</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Cuba Gustafsson | 2023
+          <i class="fa-solid fa-globe"></i>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
