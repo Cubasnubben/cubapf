@@ -458,6 +458,7 @@ form .btncv:hover {
     color: rgb(117, 243, 190);
 }
 
+
 /*Small Screen*/
 
 
@@ -487,7 +488,7 @@ form .btncv:hover {
 
 
     nav .fa-bars {
-         display: block;
+    display: block;
     position: absolute;
     top: 40px;
     right: 30px;
@@ -556,7 +557,7 @@ form .btncv:hover {
         display: flex;
         width: 70%;
         margin-right: 40px;
-        justify-content: center; /* Further reduced padding for very small screens */
+        justify-content: center;
     }
 
     .contact-left, .contact-right {
@@ -574,4 +575,16 @@ form .btncv:hover {
     form .btncv {
         width: 68%;
     }
+}
+
+@media only screen and (min-width: 601px) {
+
+   .fa-solid.fa-x {
+    display: none;
+  }
+  .fa-bars:before{
+    display: none;
+
+  }
+
 }
