@@ -459,15 +459,13 @@ form .btncv:hover {
 }
 
 /*Small Screen*/
-nav .fa-solid {
-    display: none;
-}
+
 
 @media only screen and (max-width: 600px){
 
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 18px;
     }
 
@@ -476,14 +474,27 @@ nav .fa-solid {
 
     }
 
-
     .header-text h1{
         font-size: 30px;
     }
+
     nav .fa-solid {
         display: block;
         font-size: 27px;
     }
+
+
+
+
+    nav .fa-bars {
+         display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 27px;
+    cursor: pointer;
+    }
+
 
     nav ul {
         background: rgba(39, 87, 67, 0.426);

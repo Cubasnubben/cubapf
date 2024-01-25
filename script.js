@@ -1,5 +1,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+var sidemenu = document.getElementById("sidemenu");
+var barsIcon = document.querySelector(".fa-bars");
 
 function opentab(tabname) {
   for (tablink of tablinks) {
@@ -18,10 +20,12 @@ var sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
   sidemenu.style.right = "0";
+  barsIcon.style.display = "none";
 }
 
 function closemenu() {
   sidemenu.style.right = "-200px";
+  barsIcon.style.display = "block";
 }
 
 //popup
