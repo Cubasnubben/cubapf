@@ -15,8 +15,9 @@ html {
 body{
     background: rgb(18, 18, 18);
     color: #fff;
-
+    overflow-x: hidden;
 }
+
 
 #header{
     width: 100%;
