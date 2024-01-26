@@ -33,13 +33,24 @@ function closemenu() {
 function openModal(event, modalId) {
   event.preventDefault();
   document.getElementById(modalId).classList.add("active");
+  //   document.addEventListener("click", closeModalOutside);
 }
 
 function closeModal(event, modalId) {
   event.preventDefault();
   event.stopPropagation();
   document.getElementById(modalId).classList.remove("active");
+  //   document.removeEventListener("click", closeModalOutside);
 }
+
+// function closeModalOutside(event) {
+//   const modals = document.querySelectorAll(".modal.active");
+//   modals.forEach((modal) => {
+//     if (!modal.contains(event.target)) {
+//       modal.classList.remove("active");
+//     }
+//   });
+// }
 //Kontakt
 
 function sendEmail(event) {
