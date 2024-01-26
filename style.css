@@ -39,6 +39,7 @@ nav{
 
 
 
+
 .logo{
  width:  360px;
 }
@@ -464,7 +465,6 @@ form .btncv:hover {
 
 @media only screen and (max-width: 600px){
 
-
     .header-text {
         margin-top: 50%;
         font-size: 18px;
@@ -485,7 +485,10 @@ form .btncv:hover {
     }
 
 
-
+.logo{
+width: 70%;
+margin-top: 10px;
+}
 
     nav .fa-bars {
     display: block;
@@ -502,7 +505,7 @@ form .btncv:hover {
         top: 0;
         right: -200px;
         width: 200px;
-        height: 75vh;
+        height: 85vh;
         padding-top: 50px;
         position: fixed;
         z-index: 2;
