@@ -410,6 +410,25 @@ background:rgb(53, 153, 111);
   color: rgb(117, 243, 190);
 transform:  translateY(-5px);
 }
+.social-icons a:nth-child(1){
+    color: #ffffff;
+}
+.social-icons a:nth-child(2){
+      background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.social-icons a:nth-child(3){
+       color: #1877F2;
+
+}
+.social-icons a:nth-child(4){
+    color: #ffffff;
+}
+.social-icons a:nth-child(5){
+    color: #0a66c2;
+}
 
 .btn.btncv {
 display: inline-block;
