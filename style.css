@@ -16,6 +16,7 @@ body{
     background: rgb(18, 18, 18);
     color: #fff;
     overflow-x: hidden;
+
 }
 
 
@@ -94,6 +95,12 @@ width: 100%;
 }
 
 .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-small{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -467,6 +474,7 @@ form .btncv:hover {
 
 @media only screen and (max-width: 600px){
 
+
     .header-text {
         margin-top: 50%;
         font-size: 18px;
@@ -592,5 +600,29 @@ form .btncv:hover {
     display: none;
 
   }
+
+}
+
+@media only screen and (max-width: 820px) and (min-width: 600px) {
+  .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .row-small{
+        display: block;
+    }
+    .contact-left,
+    .contact-right {
+        width: calc(50% - 10px);
+    }
+    .social-icons {
+        display: flex;
+    }
+
+   .fa-download{
+    display: none;
+    }
 
 }
