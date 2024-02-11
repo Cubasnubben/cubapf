@@ -33,7 +33,6 @@ function closemenu() {
 function openModal(event, modalId) {
   event.preventDefault();
   document.getElementById(modalId).classList.add("active");
-  //   document.addEventListener("click", closeModalOutside);
 }
 
 function closeModal(event, modalId) {
@@ -69,4 +68,18 @@ function sendEmail(event) {
     encodeURIComponent(message);
 
   window.location.href = mailtoLink;
+}
+
+const toggleSwitch = document.getElementById("modeToggle");
+
+// Add event listener for the toggle switch
+toggleSwitch.addEventListener("change", switchTheme, false);
+
+// Function to switch between dark and light mode
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
 }
