@@ -1,7 +1,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 var sidemenu = document.getElementById("sidemenu");
-var barsIcon = document.querySelector(".fa-bars");
+var barsIcon = document.querySelector(".fa-burger");
 
 function opentab(tabname) {
   for (tablink of tablinks) {
@@ -68,18 +68,4 @@ function sendEmail(event) {
     encodeURIComponent(message);
 
   window.location.href = mailtoLink;
-}
-
-const toggleSwitch = document.getElementById("modeToggle");
-
-// Add event listener for the toggle switch
-toggleSwitch.addEventListener("change", switchTheme, false);
-
-// Function to switch between dark and light mode
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
 }

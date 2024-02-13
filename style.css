@@ -12,11 +12,11 @@
 html {
     scroll-behavior: smooth;
 }
+
 body{
     background: rgb(18, 18, 18);
     color: #fff;
     overflow-x: hidden;
-
 }
 
 
@@ -80,11 +80,19 @@ width: 100%;
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+  text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
 }
+
+.header-text p {
+  text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
+}
+
+
 
 .header-text h1 span {
     color: rgb(62, 177, 129);
-    text-shadow: 2px 3px 3px rgb(27, 45, 34);
+      text-shadow: 16px 22px 11px rgba(0, 0, 0, 0.719);
+
 }
 
 /*ABOUT */
@@ -524,13 +532,15 @@ form .btncv:hover {
      margin-top: 10px;
     }
 
-    nav .fa-bars {
+    nav .fa-burger {
     display: block;
     position: absolute;
     top: 40px;
     right: 30px;
     font-size: 27px;
     cursor: pointer;
+    color: #c5bb84;
+
 }
 
     nav ul {
