@@ -501,7 +501,14 @@ form .btncv:hover {
 }
 
 
+
 /*Small Screen*/
+
+@media only screen and (min-width: 601px) {
+  nav .fa-burger {
+    display: none;
+  }
+}
 
 
 @media only screen and (max-width: 600px){
@@ -540,8 +547,8 @@ form .btncv:hover {
     font-size: 27px;
     cursor: pointer;
     color: #c5bb84;
+    }
 
-}
 
     nav ul {
         background: rgba(39, 87, 67, 0.426);
